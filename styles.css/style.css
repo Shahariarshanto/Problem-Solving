@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+}
+.main h1 {
+  margin-bottom: 30px;
+}
+.main button {
+  padding: 10px 20px;
+  background-color: tomato;
+  font-size: 22px;
+  border-radius: 12px;
+  border: none;
+}
+#num-output {
+  padding: 20px;
+  border-radius: 50%;
+  border: 5px dotted orange;
+}
