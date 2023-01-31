@@ -195,3 +195,20 @@ function countZeros ( binary_num ) {
         }
 
         console.log(findMax([55,10,95]));
+
+
+
+        const deleteProperty =(arr)=>{
+            // Write your code here.
+            
+                let obj = arr[0];
+                let prop = arr[1];
+                if (obj.hasOwnProperty(prop)) {
+                    delete obj[prop];
+                    return "YES";
+                } else {
+                    return "NO";
+                }
+            }
+            
+            
