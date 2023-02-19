@@ -11,9 +11,37 @@ function getGrade(marks) {
       return 'F';
     }
   }
-  console.log(getGrade());
+//   console.log(getGrade());
 
-//! Average Mark in Number
+
+//!-------------------------------------------------------------
+
+
+  function getGrade(score) {
+    let grade;
+    if (25 < score && score <= 30) {
+        grade = "A";
+    } else if (20 < score && score <= 25) {
+        grade = "B";
+    } else if (15 < score && score <= 20) {
+        grade = "C";
+    } else if (10 < score && score <= 15) {
+        grade = "D";
+    } else if (5 < score && score <= 10) {
+        grade = "E";
+    } else if (0 < score && score <= 5) {
+        grade = "F";
+    } 
+
+    return grade;
+}
+
+
+console.log(getGrade())
+
+
+
+//! Average Mark in Number  -----------------------------------------
 
 function average (arrOfMarks){
     //write your code here
@@ -212,3 +240,35 @@ function countZeros ( binary_num ) {
             }
             
             
+// !-----------------------------------------------
+
+
+function Rectangle(a, b) {
+    return {
+        length: a,
+        width: b,
+        perimeter: 2 * (a + b),
+        area: a * b
+      };
+
+}
+
+
+// console.log(Rectangle(4,5));
+
+
+// !-------------------------------------------------------------
+
+
+
+function getCount(objects) {
+    let count = 0;
+    for (let i = 0; i < objects.length; i++) {
+        if (objects[i].x == objects[i].y) {
+            count++;
+        }
+    }
+    return count;
+}
+
+console.log(getCount([{x:1, y:1} , {x:2, y:3}]));
